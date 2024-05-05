@@ -92,4 +92,53 @@
 //     name: 'yoshi'
 // }
 // console.log(age3)
-console.log('testing');
+// Function types
+// let greet: Function;
+// // greet = 'hello';
+// greet = () => {
+//     console.log('hello');
+// }
+// // Can also specify the parameter types --> ?! means optional
+// // When you don't have a return statement, you can use void
+// const add = (a: number, b: number, c ?: number): void => {
+//     console.log(a+b);
+//     console.log(c);
+// }
+// add(5,10)
+// // Can explicity state the return type
+// const minus = (a: number, b: number): number => {
+//     return a - b;
+// }
+// let result = minus(10,7)
+// // result = 'something else'
+// // Type Aliases --> create custom types
+// type StringOrNum = string | number;
+// type objWithName = { name: string; uid: StringOrNum; };
+// const logDetails = (uid: StringOrNum, item: string) => {
+//     console.log(`${item} has a uid of ${uid}`);
+// }
+// const greet = (user: objWithName ) => {
+//     console.log(`${user.name} says hello`);
+// }
+// Function Types (signatures) --> describes the general structure of a function 
+// // let greetAgain: Function;
+// let greet2: (a: string, b: string) => void;
+// // Example 1
+// greet2 = (name: string, greeting: string) => {
+//     console.log(`${name} says ${greeting}`);
+// }
+// // Example 2
+// let calc: (a: number, b: number, c: string) => number;
+// calc = (numOne: number, numTwo: number, action: string) => {
+//     if (action === 'add') {
+//         return numOne + numTwo
+//     } else {
+//         return numOne - numTwo
+//     }
+// }
+// // Example 3
+// let logDetails: (obj: { name: string; age: number }) => void;
+// type person = { name: string; age: number };
+// logDetails = (ninja: person) => {
+//     console.log(`${ninja.name} is ${ninja.age} years old.`);
+// }
